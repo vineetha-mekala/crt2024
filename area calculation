@@ -60,11 +60,10 @@ Sample Output 2
 
 
 
-================
+======================
 Submitted Code
-================
 Language: C
-============
+======================
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
