@@ -6,7 +6,8 @@ The cosmetic company “BeautifyMe” has decided to reward its brand promoters 
 
 Each batch is identified by a unique numeric barcode. Each digit of the barcode number represents a product ID of the products present in the batch. 
 Before distributing the products to its promoters, the company wants to make sure that all products present in the batch are still fresh and safe to use. 
-The distribution center has therefore been advised to identify the oldest product in each batch is the one with the smallest product ID. There can be multiplies of the same product in one batch.
+The distribution center has therefore been advised to identify the oldest product in each batch is the one with the smallest product ID.
+There can be multiplies of the same product in one batch.
 
 Input Format:
 ------------
