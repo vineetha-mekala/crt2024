@@ -1,0 +1,78 @@
+===================================
+PROBLEM:
+Sum of odd and even 2
+===================================
+
+Write a program to sum of even and odd elements in an array.
+
+Input Format:
+------------
+Integer corresponds to the size of the array. Read n elements line by line
+
+Constraints:
+-----------
+1<=n<=10^7
+
+Output Format:
+-------------
+Print Odd sum Print Even sum
+===============
+Sample Input 0
+===============
+3
+31
+28
+13
+================
+Sample Output 0
+================
+44
+28
+===============
+Sample Input 1
+===============
+6
+12
+100
+28
+31
+22
+45
+================
+Sample Output 1
+================
+76
+162
+
+
+=====================
+Submitted Code
+Language: C
+=====================
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+   int n;
+    scanf("%d",&n);
+    int a[n];
+    for( int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    int e=0;
+    int o=0;
+    for( int i=0;i<n;i++){
+        if(a[i]%2==0){
+            e=e+a[i];
+         }
+        else
+        {
+            o=o+a[i];
+        }
+    }
+    printf("%d\n%d",o,e);
+    return 0;
+}
+​
