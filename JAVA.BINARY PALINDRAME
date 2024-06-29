@@ -1,0 +1,93 @@
+=================================
+PROBLEM:
+Binary palindrome 12
+=================================
+Given an integer n, write a program that returns "yes" if binary representation of n is palindrome else return "no".
+
+Input Format:
+------------
+Read a number
+
+Constraints:
+-----------
+1<=n<=10000
+
+Output Format:
+-------------
+print yes or no
+==============
+Sample Input 0
+==============
+9
+===============
+Sample Output 0
+===============
+yes
+=============
+Explanation 0
+=============
+9 binary value is 1001
+1001 is palindrome that's why output is "yes"
+==============
+Sample Input 1
+==============
+123
+===============
+Sample Output 1
+===============
+no
+=============
+Explanation 1
+=============
+123 binary value is 1111011
+That's why output is "no"
+
+====================================
+SUBMITTED CODE
+LANGUAGE:JAVA
+====================================
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static int fun(int x)
+    {  
+        int r=0;
+        while(x>0){
+        //int d=x/2;
+         int re=x%2;
+         x=x/2;
+        r=r*10+re;
+        }
+        
+        return r;
+    }
+    public static int fun1(int y)
+    {
+        int rev=0,n=0;
+        while(y>0)
+        {
+           // int n=y/10;
+            n=y%10;
+            y=y/10;
+            rev=rev*10+n;
+        }
+        return rev;
+    }
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a;
+        a=s.nextInt();
+        int k=fun(a);
+        int m=fun1(k);
+        if(k==m)
+        {
+            System.out.println("yes");
+        }
+        else
+        {
+            System.out.println("no");
+        }
+    }
+}
