@@ -1,0 +1,64 @@
+=================================
+PROBLEM:
+Factorial sum 3
+=================================
+Write a program to find the sum of factorial of each digit in the given number.
+
+Input Format:
+------------
+Read a number
+
+Constraints:
+-----------
+1<=n<=10^7
+
+Output Format:
+-------------
+Print output
+==============
+Sample Input 0
+==============
+56
+================
+Sample Output 0
+================
+840
+==============
+Sample Input 1
+==============
+98427
+================
+Sample Output 1
+===============
+408266
+
+
+
+=========================================
+SUBMITTED CODE
+LANGUAGE:JAVA
+=========================================
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n,sum=0,i;
+        n=s.nextInt();
+        int r=(int)Math.log10(n);
+        while(n>0)
+        {
+            int d=n%10;
+            int f=1;
+            for(i=1;i<=d;i++)
+            {
+              f=f*i;
+            }
+           sum=sum+f;
+           n=n/10;
+        }
+        System.out.println(sum);
+    }
+}
