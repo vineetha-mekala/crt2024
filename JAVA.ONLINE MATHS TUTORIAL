@@ -1,7 +1,7 @@
-===================================
+==================================
 PROBLEM
 Online maths tutorial
-===================================
+==================================
 In an online maths tutorial a student is given a list of N numbers.
 From this list, the student is required to sum each element in the list such that the ith element in the output list will be equal to the sum to the first element until the ith element in the list.
 
