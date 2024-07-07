@@ -1,0 +1,69 @@
+==================================
+PROBLEM
+String swapcase
+==================================
+Read a stirng and convert upper case into lower case and vice versa
+
+Input Format:
+------------
+Read a string
+
+Constraints:
+-----------
+string
+
+Output Format:
+-------------
+Print result string
+==============
+Sample Input 0
+==============
+Java Language
+===============
+Sample Output 0
+===============
+jAVA lANGUAGE
+==============
+Sample Input 1
+==============
+pYtHOn Is SIMPLE language
+===============
+Sample Output 1
+===============
+PyThoN iS simple LANGUAGE
+
+
+=================================
+SUBMITTED CODE
+LANGUAGE:JAVA
+=================================
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String str1=s.nextLine();
+        
+        for(int i=0;i<str1.length();i++)
+        {
+            char ch=str1.charAt(i);
+            if(ch!=' ')
+            {
+            if(Character.isUpperCase(ch)==true)
+            {
+                ch=Character.toLowerCase(ch);
+                System.out.print(ch);
+            }
+            else if(Character.isLowerCase(ch)==true)
+            {
+                ch=Character.toUpperCase(ch);
+                System.out.print(ch);
+            }
+            }
+            else
+                System.out.print(' ');
+        }
+    }
+}
