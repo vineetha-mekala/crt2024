@@ -1,0 +1,57 @@
+=========================================
+PROBLEM
+String compare 5
+=========================================
+Write a program to find whether the given two strings
+
+Input Format:
+------------
+Input consists of 2 strings.
+
+Constraints:
+-----------
+string
+
+Output Format:
+-------------
+If two strings are same, display “Strings are same”, else display “Strings are not same”.
+==============
+Sample Input 0
+==============
+java
+java
+===============
+Sample Output 0
+===============
+Strings are same
+==============
+Sample Input 1
+==============
+python
+Java
+===============
+Sample Output 1
+===============
+Strings are not same
+
+=====================================
+SUBMITTED CODE
+LANGUAGE:JAVA
+=====================================
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String str1=s.next();
+        String str2=s.next();
+    int i=str1.compareTo(str2);
+    if(i==0)
+        System.out.printf("Strings are same");
+    else
+        System.out.printf("Strings are not same");
+
+    }
+}
